@@ -1,0 +1,6 @@
+/app/_pycache_
+/app/migrations
+/core/_pycache_
+/dashboard/_pycache_
+/dashboard/migrations
+/env/
