@@ -1,0 +1,105 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block content %}
+<div class="mx-3 my-5">
+    <h3 class="text-center">Business Analysis</h5>
+    <!--div class="bg-secondary bg-opacity-25 px-5 py-3 rounded">
+    <canvas id="customer-count"></canvas>
+    </div-->
+
+    <div class="my-3 mx-3">
+        <!--h1>Business Analysis</h1-->
+        <div class="d-flex">
+            <div class="col-5 card mx-5">
+                <div class="card-body">
+                    <h5 class="card-title text-primary"># Transactions Volume</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Yearly</h6>
+                    <div>
+                        <canvas id="total-txns-vol-chart"></canvas>
+                    </div>
+                    <h1 class="card-text text-end">5,100</h1>
+                </div>
+            </div>
+
+            <div class="col-5 card mx-5">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Transactions Amount Volume</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Annual</h6>
+                    <div>
+                        <canvas id="total-txns-amt-vol-chart"></canvas>
+                    </div>
+                    <h1 class="card-text text-end">8,00,100.10</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="my-3 mx-3">
+            <div class="d-flex">
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">YoY % Change</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Yearly</h6>
+                        
+                        <h1 class="card-text text-end text-success">80%</h1>
+                    </div>
+                </div>
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">QoQ % Change</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Quarterly</h6>
+                        
+                        <h1 class="card-text text-end text-success">35%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my-3 mx-3">
+            <div class="d-flex">
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">MoM % Change</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Monthly</h6>
+                        
+                        <h1 class="card-text text-end text-success">15%</h1>
+                    </div>
+                </div>
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">FP Ratio</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Fixed-to-Periodic Ratio</h6>
+                        
+                        <h1 class="card-text text-end text-success">2:3</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-3 mx-3">
+            <div class="d-flex">
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">COU Split (Top 5 Volumes)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Yearly</h6>
+                        <div>
+                            <canvas id="cou-vol-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-5 card mx-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">BOU Split (Top 5 Volumes)</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Annual</h6>
+                        <div>
+                            <canvas id="bou-vol-chart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+</div>
+{% endblock content %}
+{% block scripts %}
+<script src="{% static '/assets/js/analysis.js' %}"></script>
+{% endblock scripts %}

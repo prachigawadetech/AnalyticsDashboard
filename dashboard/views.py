@@ -23,3 +23,13 @@ def get_txns_data(request):
 
 def customers(request):
     return render(request,"customers.html")
+
+def bussanalysis(request):
+    return render(request,"bussanalysis.html")
+
+def custanalysis(request):
+    return render(request,"custanalysis.html")
+
+
+def predictanalysis(request):
+    return render(request,"predictanalysis.html")
