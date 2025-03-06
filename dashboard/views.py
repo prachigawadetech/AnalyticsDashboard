@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 import pandas as pd
 from django.http import JsonResponse
+from .forms import MyForm
 
 # Create your views here.
 def index(request):
@@ -33,3 +34,8 @@ def custanalysis(request):
 
 def predictanalysis(request):
     return render(request,"predictanalysis.html")
+
+#datepicker calendar
+def my_view(request):
+    form = MyForm()
+    return render(request, 'my_template.html', {'form': form})

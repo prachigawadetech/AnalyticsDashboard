@@ -167,3 +167,11 @@ new Chart(totalTxnsVolChart, {
             }
           }
         });
+
+        $(document).ready(function(){
+            $('#datepicker').datepicker({
+                format: 'yyyy-mm-dd',  // Change format as per need
+                autoclose: true,
+                todayHighlight: true
+            });
+        });

@@ -6,8 +6,8 @@ const customerCount = new Chart(customerCountChart, {
     data: {
       labels: ['Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan'],
       datasets: [{
-        label: '# of customers paying bills',
-        data: [100, 150, 200, 180, 250, 300],
+        label: '# of transactions',
+        data: [10000, 15000, 22300, 22338, 25000, 30000],
         borderWidth: 1
       }]},
       options: {
